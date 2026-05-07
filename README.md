@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TradeLens AI Master
 
 Python FastAPI dashboard for:
@@ -38,3 +39,7 @@ Later, replace `app/services/data_feed.py` with:
 - Broker order execution API
 
 Do not enable live trading until you have paper-traded and added broker-side risk controls.
+=======
+# TradeLens-AI
+Intelligent trading analytics platform combining AI, automation, and real-time market data to assist with decision-making, trade execution, and strategy visualization.
+>>>>>>> 28572c651948ae3a21cc2138e18391c6f06a3775
