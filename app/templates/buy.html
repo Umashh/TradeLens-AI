@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Buy TradeLens Bot</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+  <style>
+    .buy-hero { text-align: center; padding: 60px 0 40px; }
+    .buy-hero h1 { font-size: 42px; font-weight: 700; letter-spacing: -0.04em; margin: 12px 0; }
+    .buy-hero .subtitle { max-width: 520px; margin: 0 auto; font-size: 16px; }
+    .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 60px; }
+    .pricing-card {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 16px; padding: 28px 24px; display: flex;
+      flex-direction: column; gap: 16px; position: relative;
+    }
+    .pricing-card.featured { border-color: var(--blue); }
+    .featured-badge {
+      position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+      background: var(--blue); color: #fff; font-size: 11px; font-weight: 700;
+      padding: 3px 14px; border-radius: 20px; letter-spacing: 0.06em;
+    }
+    .pricing-card h2 { font-size: 36px; font-weight: 700; color: var(--text); }
+    .pricing-card .price-sub { font-size: 13px; color: var(--muted); margin-top: -10px; }
+    .pricing-card ul { list-style: none; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+    .pricing-card ul li { font-size: 13px; color: var(--muted); padding-left: 18px; position: relative; }
+    .pricing-card ul li::before { content:''; position:absolute; left:0; top:6px; width:6px; height:6px; border-radius:50%; background: var(--blue); }
+    .pricing-card button {
+      padding: 12px; border-radius: 10px; border: 1px solid var(--border);
+      background: transparent; color: var(--text); font-size: 14px; font-weight: 500;
+      cursor: pointer; transition: all 0.15s;
+    }
+    .pricing-card button:hover { background: var(--bg3); }
+    .pricing-card.featured button { background: var(--blue); border-color: var(--blue); color: #fff; }
+    .pricing-card.featured button:hover { opacity: 0.9; }
+    .features-section { margin-bottom: 60px; }
+    .features-section h2 { font-size: 24px; font-weight: 600; margin-bottom: 20px; }
+    .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .feature-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+    .feature-card .icon { font-size: 22px; margin-bottom: 10px; }
+    .feature-card h3 { font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+    .feature-card p { font-size: 12px; color: var(--muted); line-height: 1.6; }
+    .faq { margin-bottom: 60px; }
+    .faq h2 { font-size: 24px; font-weight: 600; margin-bottom: 20px; }
+    .faq-item { border-bottom: 1px solid var(--border); padding: 16px 0; }
+    .faq-item h4 { font-size: 14px; font-weight: 500; margin-bottom: 6px; }
+    .faq-item p { font-size: 13px; color: var(--muted); line-height: 1.6; }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="logo">TradeLens<span style="color:var(--blue)"> AI</span></div>
+    <div>
+      <a href="/">Dashboard</a>
+      <a href="/buy">Buy Bot</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="buy-hero">
+      <p class="eyebrow">AUTOMATED ICT TRADING</p>
+      <h1>TradeLens AI Bot</h1>
+      <p class="subtitle">
+        Rules-based paper and live execution for NQ futures.
+        SMT divergence, FVG, BOS, and liquidity sweep automation
+        — built for the 9–12 AM New York ICT window.
+      </p>
+    </section>
+
+    <section class="pricing-grid">
+      <div class="pricing-card">
+        <p class="eyebrow">STARTER</p>
+        <h2>$99<span style="font-size:16px;font-weight:400;color:var(--muted)">/mo</span></h2>
+        <p class="price-sub">Dashboard + analytics only</p>
+        <ul>
+          <li>Live NQ + ES price feed</li>
+          <li>Trade journal analytics</li>
+          <li>SMT + FVG signal detection</li>
+          <li>ICT session display</li>
+          <li>No bot execution</li>
+        </ul>
+        <button>Get Started</button>
+      </div>
+
+      <div class="pricing-card featured">
+        <div class="featured-badge">MOST POPULAR</div>
+        <p class="eyebrow">MASTER BOT</p>
+        <h2>$299<span style="font-size:16px;font-weight:400;color:var(--muted)">/mo</span></h2>
+        <p class="price-sub">Full automation engine</p>
+        <ul>
+          <li>Everything in Starter</li>
+          <li>ICT window auto-execution</li>
+          <li>BOS + MSS confirmation</li>
+          <li>Liquidity sweep model</li>
+          <li>SMT divergence filter</li>
+          <li>Paper trading + live mode</li>
+          <li>Trade log to CSV</li>
+        </ul>
+        <button>Buy Master Bot</button>
+      </div>
+
+      <div class="pricing-card">
+        <p class="eyebrow">PRO DESK</p>
+        <h2>Custom</h2>
+        <p class="price-sub">Enterprise + multi-account</p>
+        <ul>
+          <li>Broker API integration</li>
+          <li>Multi-account execution</li>
+          <li>Custom strategy filters</li>
+          <li>Risk dashboard</li>
+          <li>Priority support</li>
+        </ul>
+        <button>Contact Us</button>
+      </div>
+    </section>
+
+    <section class="features-section">
+      <h2>How the bot works</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="icon">🔍</div>
+          <h3>SMT Divergence</h3>
+          <p>Compares NQ and ES to detect when one makes a new high/low that the other fails to confirm — a key institutional signal.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">📊</div>
+          <h3>Fair Value Gap</h3>
+          <p>Detects price imbalances (FVG/IFVG) where institutions left unfilled orders, marking high-probability entry zones.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">💧</div>
+          <h3>Liquidity Sweep</h3>
+          <p>Identifies when price sweeps session highs/lows to trigger stop orders before reversing — the classic ICT entry model.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">📈</div>
+          <h3>BOS / MSS</h3>
+          <p>Break of Structure and Market Structure Shift confirmation ensures the bot only enters after trend direction is confirmed.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">⏰</div>
+          <h3>ICT Window Filter</h3>
+          <p>Only trades during 9:00–12:00 AM New York time — the highest-probability session for NQ institutional flow.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">📋</div>
+          <h3>Trade Journal</h3>
+          <p>Every paper and live trade is logged to CSV automatically with entry, exit, PnL, setup type, and timestamps.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2>Frequently asked questions</h2>
+      <div class="faq-item">
+        <h4>Does it trade real money automatically?</h4>
+        <p>Not by default. The bot runs in paper trading mode until you explicitly connect a broker API and enable live mode. You are always in control.</p>
+      </div>
+      <div class="faq-item">
+        <h4>What data feed does it use?</h4>
+        <p>Currently uses Yahoo Finance for NQ and ES futures prices (1-minute delayed). Upgrade to Tradovate or Databento WebSocket for real-time tick data.</p>
+      </div>
+      <div class="faq-item">
+        <h4>What's the Master ICT Setup?</h4>
+        <p>The bot only enters when all four signals fire simultaneously: a liquidity sweep, SMT divergence between NQ and ES, a fair value gap, and a break of structure. This high confluence requirement keeps trade frequency low and quality high.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Can I run it outside of 9–12 AM?</h4>
+        <p>Yes — the ICT window filter can be adjusted in your .env file. The default 9–12 AM window follows ICT's "New York AM session" methodology.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

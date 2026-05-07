@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TradeLens AI Master</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+</head>
+<body>
+  <nav class="nav">
+    <div class="logo">TradeLens AI</div>
+    <div>
+      <a href="/">Dashboard</a>
+      <a href="/buy">Buy Bot</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">ICT AUTOMATION ENGINE</p>
+        <h1>Master AI for NQ execution, SMT, FVG, BOS and liquidity sweeps.</h1>
+        <p class="subtitle">
+          Built for the 9 AM to 12 PM New York ICT window with real-time chart ingestion,
+          trade analytics, and strategy automation modules.
+        </p>
+      </div>
+
+      <div class="price-card">
+        <p>NQ Live Price</p>
+        <h2 id="nq-price">Loading...</h2>
+        <span id="ict-status">Checking ICT window...</span>
+      </div>
+    </section>
+
+    <section class="stats-grid">
+      
+      <div class="stat"><p>Total PnL</p><h3 id="total-pnl">$0</h3></div>
+      <div class="stat"><p>Win Rate</p><h3 id="win-rate">0%</h3></div>
+      <div class="stat"><p>Total Trades</p><h3 id="total-trades">0</h3></div>
+      <div class="stat"><p>Best Setup</p><h3 id="best-setup">--</h3></div>
+    </section>
+    <section class="panel">
+      <div class="panel-header">
+        <div>
+          <p class="eyebrow">BOT ENGINE</p>
+          <h2>Paper Trading Bot</h2>
+        </div>
+        <div class="pill" id="bot-status">Loading...</div>
+      </div>
+    
+      <div class="stats-grid">
+        <div class="stat">
+          <p>Bot Mode</p>
+          <h3 id="bot-mode">--</h3>
+        </div>
+        <div class="stat">
+          <p>Current Bias</p>
+          <h3 id="bot-bias">--</h3>
+        </div>
+        <div class="stat">
+          <p>Bot PnL</p>
+          <h3 id="bot-pnl">$0</h3>
+        </div>
+        <div class="stat">
+          <p>Bot Win Rate</p>
+          <h3 id="bot-win-rate">0%</h3>
+        </div>
+      </div>
+    
+      <p class="subtitle" id="bot-action">Waiting...</p>
+    </section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <div>
+          <p class="eyebrow">REAL TIME CHART</p>
+          <h2>NQ Futures Stream</h2>
+        </div>
+        <div class="pill">Mock feed now • Broker feed later</div>
+      </div>
+      <div id="chart"></div>
+    </section>
+
+    <section class="grid-two">
+      <div class="panel">
+        <p class="eyebrow">SIGNAL ENGINE</p>
+        <h2>Live ICT Signals</h2>
+        <div id="signals" class="signals"></div>
+      </div>
+
+      <div class="panel">
+        <p class="eyebrow">BOT RULES</p>
+        <h2>Execution Filters</h2>
+        <ul class="rules">
+          <li>Only trade inside 9:00 AM - 12:00 PM New York window.</li>
+          <li>Require liquidity sweep before entry model.</li>
+          <li>Confirm SMT between ES and NQ.</li>
+          <li>Enter only after FVG/IFVG plus BOS/MSS confirmation.</li>
+          <li>Hard stop after max daily loss.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="/static/js/dashboard.js"></script>
+</body>
+</html>
